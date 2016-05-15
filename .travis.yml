@@ -8,6 +8,4 @@ before_install:
 after_success:
   - codecov --file coverage/lcov.info --disable search
 
-composer install
-
 script: phpunit --coverage-text
