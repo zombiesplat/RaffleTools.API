@@ -1,5 +1,3 @@
-languages:
-  PHP: true
 engines:
   fixme:
     enabled: true
@@ -18,6 +16,6 @@ ratings:
   paths:
   - src/**
   - "*.php"
-excluded_paths:
+exclude_paths:
   - tests/**/*
   - vendor/**/*
