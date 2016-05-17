@@ -4,7 +4,7 @@ php:
   - '7.0'
 
 env:
-  CODECLIMATE_REPO_TOKEN: ce6fe1b4b137a9b37dcae62ee6eee5585b621e286fdd4ae576974b800a6bcdd2
+  CODECLIMATE_REPO_TOKEN: ce6fe1b4b137a9b37dcae62ee6eee5585b621e286fdd4ae576974b800a6bcdd2 ./vendor/bin/test-reporter
 
 before_script:
   - composer self-update
