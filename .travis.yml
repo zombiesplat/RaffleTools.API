@@ -11,7 +11,7 @@ before_script:
 
 install: travis_retry composer install --no-interaction --prefer-source
 
-script: phpunit --coverage-clover builds/logs/clover.xml
+script: phpunit --coverage-clover build/logs/clover.xml
 
 after_success:
   # CodeClimate
