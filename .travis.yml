@@ -4,7 +4,7 @@ php:
   - '7.0'
 
 env:
-  CODECLIMATE_REPO_TOKEN: ce6fe1b4b137a9b37dcae62ee6eee5585b621e286fdd4ae576974b800a6bcdd2 ./vendor/bin/test-reporter
+  CODECLIMATE_REPO_TOKEN: ce6fe1b4b137a9b37dcae62ee6eee5585b621e286fdd4ae576974b800a6bcdd2
 
 before_script:
   - composer self-update
@@ -12,3 +12,7 @@ before_script:
 install: travis_retry composer install --no-interaction --prefer-source
 
 script: phpunit --coverage-clover builds/logs/clover.xml
+
+after_success:
+  # CodeClimate
+  - vendor/bin/test-reporter
